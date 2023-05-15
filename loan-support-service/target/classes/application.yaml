@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: loan-support-service
+  kafka:
+    bootstrap-servers: localhost:9092
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+server:
+  port: 8083
+

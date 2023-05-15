@@ -1,0 +1,5 @@
+com\invext\loansupportservice\configuration\KafkaConsumerConfiguration.class
+com\invext\loansupportservice\listener\KafkaListeners.class
+com\invext\loansupportservice\LoanSupportServiceApplication.class
+com\invext\loansupportservice\model\CustomerRequest.class
+com\invext\loansupportservice\model\CustomerRequest$CustomerRequestBuilder.class

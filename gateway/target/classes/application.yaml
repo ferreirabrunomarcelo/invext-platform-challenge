@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: gateway
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  cloud:
+    gateway:
+      routes:
+        - id: request-distribution-service
+          uri: lb://request-distribution-service
+          predicates:
+            - Path=/api/v1/customer-requests/**
+        - id: attendant-service
+          uri: lb://attendant-service
+          predicates:
+            - Path=/api/v1/attendants/**
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+server:
+  port: 8080
+
