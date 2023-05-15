@@ -4,7 +4,7 @@ O projeto foi desenvolvido com base na arquitetura de microsserviços e utilizan
 
 1. Eureka-discovery-service: Tem a responsabilidade de realizar a estratégia de descobertas de serviços
 2. Gateway: Serve como um portão de entrada para as requisições escondendo os endpoints importantes de outros microsserviços.
-3. Request-distribution-service: Esse serviço é chamado quando uma nova solicitação de suporte é criada. Também tem a responsabilidade de encaminhar para os times 4. responsáveis de acordo com o assunto da solicitação.
+3. Request-distribution-service: Esse serviço é chamado quando uma nova solicitação de suporte é criada. Também tem a responsabilidade de encaminhar para os times responsáveis de acordo com o assunto da solicitação.
 5. Attendent-service: Esse serviço gerencia todos os atendentes.
 6. Card-support-service: Esse serviço recebe todas as solicitações de suporte sobre cartões de crédito e delega para os atendentes de acordo com as regras pré-estabelecidas.
 7. Loan-support-service: Esse serviço recebe todas as solicitações de suporte sobre empréstimose delega para os atendentes de acordo com as regras pré-estabelecidas.
